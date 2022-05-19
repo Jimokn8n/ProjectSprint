@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public float health;
+    Animator anim;
 
     //Patroling
     public Vector3 walkPoint;
@@ -30,8 +31,9 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("PlayerObj").transform;
+        //player = GameObject.FindGameObjectWithTag("Runner").transform;
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -44,15 +46,20 @@ public class Enemy : MonoBehaviour
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
+    
+ 
+
 
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
+        {
             agent.SetDestination(walkPoint);
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
+            anim.SetBool("isRunning", true);
+        }
+            Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
@@ -72,7 +79,11 @@ public class Enemy : MonoBehaviour
 
     private void ChasePlayer()
     {
+        player = GameObject.FindGameObjectWithTag("Runner").transform;
         agent.SetDestination(player.position);
+        anim.SetBool("isShooting", false);
+        anim.SetBool("isRunning", true);
+
     }
 
     private void AttackPlayer()
@@ -86,6 +97,7 @@ public class Enemy : MonoBehaviour
         {
             ///Attack code here
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
@@ -96,6 +108,7 @@ public class Enemy : MonoBehaviour
     }
     private void ResetAttack()
     {
+        anim.SetBool("isShooting", true);
         alreadyAttacked = false;
     }
 

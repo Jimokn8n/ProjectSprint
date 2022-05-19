@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 82a2914d8f86c62488456950c8330e38
+guid: 567cccd60b3039241b5b7a8142974522
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mixbox_mat.002
-    second: {fileID: 2100000, guid: e3ad68218b6a5d24a958544b1f81a6a1, type: 2}
+    second: {fileID: 2100000, guid: 60c2f0e0aaa8f8d4e9d23d7e3768653b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -419,18 +419,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Jammo_LowPoly(Clone)
+    - name: Jammo_LowPoly_Green(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ankle_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000051632525, y: 2.0861935e-11, z: -0.0000000019101425}
       rotation: {x: -0.7071068, y: 5.301282e-10, z: 6.338494e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: Armature.001
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
       scale: {x: 28, y: 28, z: 28}
@@ -730,122 +730,122 @@ ModelImporter:
       rotation: {x: 0.045736898, y: -0.039432693, z: -0.07275269, w: 0.9955201}
       scale: {x: 1, y: 0.99999994, z: 1}
     - name: chest_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.000000016772749, y: 0.000000016522405, z: 2.6918413e-15}
       rotation: {x: -0.7071068, y: -2.6341795e-10, z: 1.0536695e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 27.999992, z: 27.999992}
     - name: ear_joint_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0, y: 2.6335877e-24, z: -1.6164846e-17}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: ears_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0, y: 2.6335877e-24, z: -1.6164846e-17}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: feet_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000051632525, y: 2.0861935e-11, z: -0.0000000019101425}
       rotation: {x: -0.7071068, y: 5.301282e-10, z: 6.338494e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: finger_index_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.0000000040164867, y: -0.000000089993634, z: -0.000000009981487}
       rotation: {x: -0.7071068, y: -0.0000000050312807, z: -0.0000000020810018, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: finger_middle_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000013268904, y: -5.846345e-10, z: -0.0000000020167568}
       rotation: {x: -0.7071068, y: -7.375698e-10, z: -0.0000000028449127, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: finger_pinky_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.00000017031161, y: -0.000000071208646, z: -0.00000002233444}
       rotation: {x: -0.7071068, y: -8.0342444e-10, z: -8.034245e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: finger_thumb_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.000000008431386, y: -0.000000018694099, z: -0.00000008524545}
       rotation: {x: -0.7071068, y: 0.000000004214686, z: -0.0000000016858759, w: 0.7071067}
       scale: {x: 27.999996, y: 28, z: 28}
     - name: forearm_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.000000072097784, y: 0.000000017356871, z: 0.000000005340579}
       rotation: {x: -0.7071068, y: -0.0000000050312807, z: -0.0000000020810018, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: head_eyes_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.0064038387, y: -0.005720872, z: -5.215405e-10}
       rotation: {x: 0.00000008146035, y: 0, z: -0, w: 1}
       scale: {x: 0.26551303, y: 0.265513, z: 0.265513}
     - name: head_main_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.000000016772749, y: 0.000000016522405, z: 2.6918413e-15}
       rotation: {x: -0.7071068, y: -2.6341795e-10, z: 1.0536695e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 27.999992, z: 27.999992}
     - name: head_mohawk_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0, y: 2.6335877e-24, z: -1.6164846e-17}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: head_screen_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0, y: 2.6335877e-24, z: -1.6164846e-17}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: heels_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000051632525, y: 2.0861935e-11, z: -0.0000000019101425}
       rotation: {x: -0.7071068, y: 5.301282e-10, z: 6.338494e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: palm_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.000000029373172, y: 0.0000000547409, z: 8.918425e-15}
       rotation: {x: -0.7071068, y: -7.375698e-10, z: -0.0000000028449127, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: pelvis_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000026702895, y: 0.00000001758472, z: -0.0000000013059471}
       rotation: {x: -0.7071068, y: 8.4295027e-10, z: -8.429241e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: scarf_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.0000000053405764, y: 0.000000019860266, z: 0.0000000013351473}
       rotation: {x: -0.7071068, y: -0.000000007744487, z: 0.000000009430359, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: screw_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.00024944852, y: 0.8024603, z: 0.14366649}
       rotation: {x: -0.7232109, y: -0.23895341, z: 0.30078816, w: 0.5739284}
       scale: {x: 28.824781, y: 28.824766, z: 28.824772}
     - name: shin_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000051632525, y: 2.0861935e-11, z: -0.0000000019101425}
       rotation: {x: -0.7071068, y: 5.301282e-10, z: 6.338494e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: shoulder_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.000000006842614, y: -0.000000013893842, z: 0.0000000013351418}
       rotation: {x: -0.7071068, y: -0.000000004333225, z: 0.0000000044385904, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: thigh_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000051632525, y: 2.0861935e-11, z: -0.0000000019101425}
       rotation: {x: -0.7071068, y: 5.301282e-10, z: 6.338494e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: torso_mid_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.0000000026702895, y: 0.00000001758472, z: -0.0000000013059471}
       rotation: {x: -0.7071068, y: 8.4295027e-10, z: -8.429241e-10, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
     - name: upperarm_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: -0.000000006842614, y: -0.000000013893842, z: 0.0000000013351418}
       rotation: {x: -0.7071068, y: -0.000000004333225, z: 0.0000000044385904, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 27.999992}
     - name: wrist_low
-      parentName: Jammo_LowPoly(Clone)
+      parentName: Jammo_LowPoly_Green(Clone)
       position: {x: 0.000000072097784, y: 0.000000017356871, z: 0.000000005340579}
       rotation: {x: -0.7071068, y: -0.0000000050312807, z: -0.0000000020810018, w: 0.7071067}
       scale: {x: 28.000004, y: 28, z: 28}
