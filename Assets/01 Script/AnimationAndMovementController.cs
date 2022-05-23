@@ -91,6 +91,7 @@ public class AnimationAndMovementController : MonoBehaviour
     {
         handleAnimation();
         handleRotation();
+        handleGravity();
         characterController.Move(currentMovement*Time.deltaTime);
     }
 
