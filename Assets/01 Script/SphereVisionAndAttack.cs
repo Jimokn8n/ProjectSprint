@@ -25,7 +25,7 @@ public class SphereVisionAndAttack : MonoBehaviour
     void Start()
     {
         currentFireRate = fireRate;
-        InvokeRepeating("SearchEnemy", 0f, .5f);   
+        InvokeRepeating("SetTarget", 0f, .5f);   
     }
 
     // Update is called once per frame
@@ -34,8 +34,9 @@ public class SphereVisionAndAttack : MonoBehaviour
         DetectAndShootEnemy();
     }
 
-    void SearchEnemy()
+    void SetTarget()
     {
+
         Collider[] cols = Physics.OverlapSphere(transform.position, range, layerMask);
         Transform shortestTarget = null;
         if(cols.Length > 0)
@@ -53,13 +54,20 @@ public class SphereVisionAndAttack : MonoBehaviour
         }
 
         target = shortestTarget;
+
+        /*
+        if (target.GetComponent<Health>().isDead)
+            target = null;
+        */
     }
 
     void DetectAndShootEnemy()
     {
+        //Health targetHealth = target.GetComponent<Health>();
+
         if (target != null)
         {
-            //anim.SetBool("isAiming", true);
+            anim.SetBool("isAiming", true);
 
             Quaternion lookRotation = Quaternion.LookRotation(target.position - transform.position);
             Vector3 euler = Quaternion.RotateTowards(transform.rotation, lookRotation, spinSpeed * Time.deltaTime).eulerAngles;
@@ -74,6 +82,8 @@ public class SphereVisionAndAttack : MonoBehaviour
                     currentFireRate = fireRate;
                     Debug.Log("น฿ป็");
                     anim.SetTrigger("doShoot");
+                    //anim.SetBool("isShooting", true);
+
                     Rigidbody rb = Instantiate(projectile, muzzlePoint.position, Quaternion.identity).GetComponent<Rigidbody>();
 
                     rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
@@ -84,7 +94,7 @@ public class SphereVisionAndAttack : MonoBehaviour
 
         else
         {
-            //anim.SetBool("isAiming", false);
+            anim.SetBool("isAiming", false);
         }
     }
 

@@ -70,7 +70,10 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Im Dead");
         isDead = true;
+        
         gameObject.GetComponent<Animator>().enabled = false;
+        gameObject.layer = 9;
+
         setRigidbodyState(false);
         setColliderState(true);
     }

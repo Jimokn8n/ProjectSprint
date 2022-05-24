@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1365981047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1365981048}
+  m_Layer: 0
+  m_Name: MuzzlePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1365981048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365981047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.038, y: 0.174, z: -0.579}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 247000385}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1371317782
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +139,7 @@ GameObject:
   - component: {fileID: 3804668888715647355}
   - component: {fileID: 6505139546071823361}
   - component: {fileID: 8193827817587186935}
-  - component: {fileID: 8193827817587186934}
+  - component: {fileID: 317283701}
   m_Layer: 0
   m_Name: Jammo_LowPoly_Enemy
   m_TagString: Untagged
@@ -199,7 +230,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8193827817587186934
+--- !u!114 &317283701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,27 +239,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 186828924799855464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b5914c6746c5074f8ab0d23bb0eecf0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d1200bc73dfe6b4287833ab7e4dd72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 8193827817587186935}
-  player: {fileID: 0}
-  whatIsGround:
+  range: 5
+  layerMask:
     serializedVersion: 2
-    m_Bits: 64
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 128
-  health: 100
-  walkPoint: {x: 0, y: 0, z: 0}
-  walkPointRange: 10
-  timeBetweenAttacks: 1
+    m_Bits: 256
+  spinSpeed: 270
+  fireRate: 0.5
   projectile: {fileID: 7850934033998722433, guid: beaa7335c243b1742b1f6bd5a63ce6d5,
     type: 3}
-  sightRange: 10
-  attackRange: 6
-  playerInSightRange: 0
-  playerInAttackRange: 0
+  muzzlePoint: {fileID: 1365981048}
 --- !u!1 &193101923336822541
 GameObject:
   m_ObjectHideFlags: 0

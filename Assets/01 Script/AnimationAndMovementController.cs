@@ -16,6 +16,8 @@ public class AnimationAndMovementController : MonoBehaviour
     bool isMovementPressed;
     float rotationFactorPerFrame = 15.0f;
 
+    public Health health;
+
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -89,10 +91,13 @@ public class AnimationAndMovementController : MonoBehaviour
 
     void Update()
     {
-        handleAnimation();
-        handleRotation();
-        handleGravity();
-        characterController.Move(currentMovement*Time.deltaTime);
+        if (!health.isDead)
+        {
+            handleAnimation();
+            handleRotation();
+            handleGravity();
+            characterController.Move(currentMovement * Time.deltaTime);
+        }
     }
 
     private void OnEnable()

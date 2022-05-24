@@ -8,6 +8,7 @@ public class AIController : MonoBehaviour {
     NavMeshAgent agent;
     Animator anim;
 
+    public Health health;
 
     void Awake()
     {
@@ -26,8 +27,27 @@ public class AIController : MonoBehaviour {
         SetSpeedValueToRandom();
     }
 
+    void Update()
+    {
+        DisableDestinationonDeath();
+    }
+
     void SetSpeedValueToRandom()
     {
         agent.speed = Random.Range(6,8.2f);
+    }
+
+
+    void DisableDestinationonDeath()
+    {
+
+        if (health != null)
+        {
+            if (health.isDead)
+            {
+                agent.enabled = false;
+
+            }
+        }
     }
 }
