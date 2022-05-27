@@ -4569,7 +4569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeedValue: 6.8
-  health: {fileID: 0}
+  health: {fileID: 1889117733}
 --- !u!136 &1889117734
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4596,8 +4596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33069dc1e0243f24192f1deb08ff0871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHealth: 30
-  maxHealth: 30
+  curHealth: 10
+  maxHealth: 10
   isDead: 0
   skeleton: {fileID: 5963497005507901841}
 --- !u!1 &6517218142207135620
