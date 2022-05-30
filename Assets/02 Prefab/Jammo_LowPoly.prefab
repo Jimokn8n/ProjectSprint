@@ -4600,6 +4600,7 @@ MonoBehaviour:
   maxHealth: 10
   isDead: 0
   skeleton: {fileID: 5963497005507901841}
+  RestartPanel: {fileID: 0}
 --- !u!1 &6517218142207135620
 GameObject:
   m_ObjectHideFlags: 0

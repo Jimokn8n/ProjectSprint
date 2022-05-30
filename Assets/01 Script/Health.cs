@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Health : MonoBehaviour
     //Ragdoll Set
     public GameObject skeleton;
 
+    public GameObject RestartPanel;
    
     void Start()
     {
@@ -76,6 +78,8 @@ public class Health : MonoBehaviour
 
         setRigidbodyState(false);
         setColliderState(true);
+
+        
     }
 
     private void OnTriggerEnter(Collider other)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class SphereVisionAndAttack : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class SphereVisionAndAttack : MonoBehaviour
 
     public GameObject projectile;
     public Transform muzzlePoint;
+
+    public MMFeedbacks ShootFeedback;
 
     void Awake()
     {
@@ -84,6 +87,7 @@ public class SphereVisionAndAttack : MonoBehaviour
                     anim.SetTrigger("doShoot");
                     //anim.SetBool("isShooting", true);
 
+                    ShootFeedback?.PlayFeedbacks();
                     Rigidbody rb = Instantiate(projectile, muzzlePoint.position, Quaternion.identity).GetComponent<Rigidbody>();
 
                     rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
